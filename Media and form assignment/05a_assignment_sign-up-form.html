@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form Section Start -->
+    <form>
+        <fieldset>
+            <legend><h3>Sign Up Form</h3></legend>
+            <!-- Name Section Start-->
+                <section>
+                    <label for="firstname"><b>First Name:</b></label>
+                    <input type="text" id="firstname" name="First-Name" placeholder="Kunal" required minlength="3" autofocus>
+                    <br><br>
+                    <label for="lastname"><b>Last Name:</b></label>
+                    <input type="text" id="lastname" name="Last-name" placeholder="Raj" required minlength="3">
+                    <br><br>
+                </section>
+                <!-- Name Section End -->
+
+            <!-- User Email-Id and Password Section start -->
+                <section>
+                    <label for="email"><b>Email-id:</b></label>
+                        <input type="email" name="Emailid" id="email" placeholder="abc@123.com" required minlength="3">
+                        <br><br>
+                        <label for="password"><b>Password:</b></label>
+                        <input type="password" name="Password" id="password" required  >
+                        <br><br>
+                        <label for="confirm-password"><b>Confirm-Password:</b></label>
+                        <input type="password" name="Confirm-Password" id="conform-password" required  >
+                        <br><br>
+                    </section>
+                          <br>
+                <!-- User Email-Id and Password Section End -->
+
+                <!-- User Country & Mobile No.Details  start-->
+                <section>
+                    <label for="nationality"><b>Nationality:</b></label>
+                    <input type="text" value="Indian" id="nationality" readonly disabled>
+                    <br><br>
+                   <label for="mobile"><b>Mobile-No:</b></label> 
+                    <input type="tel" name="Mobile-No" id="mobile" >
+                </section>
+                <br><br>
+                <!-- User Country & Mobile No.Details  End-->
+
+                <!-- Age & Weight Details start -->
+                <section>
+                    <label for="age"><b>Age:</b></label>
+                    <input type="number" name="Age" id="age" min="0" max="150" required >
+                    <br><br>
+                    <label for="weight"><b>Weight in KG:</b></label>
+                    <input type="range" id="weight" name="Weight" min="5" max="100">
+                </section>
+
+                
+                    <br><br>
+                <!-- Age & Weight Details start -->
+
+                <!-- Color,Date & Time Details Start -->
+
+                <section>
+                    <label for="color"><b>Choose your favourite color:</b></label>
+                    <input type="color" id="color" name="Color">
+                    <br><br>
+                    <label for="date"><b>DOB:</b></label>
+                    <input type="date" id="date">
+                    <br><br>
+                    <label for="time"><b>Time:</b></label>
+                    <input type="time" name="Time" id="time">
+                    <br><br>
+
+                </section>
+                <!-- Subject Details Start -->
+                <section>
+                    <label for="subject"><b>Choose you subject</b></label>
+                    <select name="Subject" id="subject">
+                        <optgroup label="Class 12">
+                            <option value="Math">Math</option>
+                            <option value="Physics" selected>Physics</option>
+                            <option value="Chemestry">Chemestry</option>
+                        </optgroup>
+                        <optgroup label="Class 10">
+                            <option value="Math">Science</option>
+                            <option value="Physics" selected>English</option>
+                            <option value="Chemestry">Hindi</option>
+                        </optgroup>
+                    </select>
+                </section>
+                <!-- Subject Details End -->
+                <br><br>
+
+                <!-- College Details Start -->
+                <label for="college"><b>Choose you College</b></label>
+                <input type="text" name="College" id="college" list="Search">
+                <datalist id="Search">
+                    <option value="Delhi College Of Engineering">
+                    <option value="Patna College Of Engineering">
+                    <option value="Bhopal College Of Engineering">
+                    <option value="Bombay College Of Engineering">
+                </datalist>
+                <input type="submit" value="Search">
+                <br><br>
+
+                <!-- College Details End -->
+
+                <!-- Gender section start -->
+                <section>
+                    <b>Select gender:</b>
+                <br>
+                <label for="male">Male:</label>
+                <input type="radio" name="gender" id="male" value="Male"  >
+                <br><br>
+                <label for="female">Female:</label>
+                <input type="radio" name="gender" id="female" value="Female"  >
+                <br><br>
+                <label for="transgender">Transgender:</label>
+                <input type="radio" name="gender" id="transgender" value="Transgender" >
+
+                </section>
+                <!-- Gender section End -->
+
+                <br><br>
+
+                <!-- Feedback Details -->
+                <label for="user"><b>Feedback Details</b></label>
+                <textarea name="Feedback" id="user" cols="2" rows="5"></textarea>
+                <br><br>
+                <!-- Tems and condition start -->
+
+                <b>Terms and condition:</b>
+                    <input type="checkbox" name="Agree" id="agree" value="I agree">
+                    <label for="agree">I agree
+                        <details>
+                            <summary><b>I agree</b></summary>
+                    
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptate est autem mollitia quibusdam tenetur, quo, aliquam incidunt et quos ipsam, ipsum in perferendis id reprehenderit libero ea accusamus quidem.</p>
+                        </details>
+                    </label>
+                    <!-- Tems and condition End -->
+                    <br><br>
+                    <!-- Reset and submit form start -->
+                    <section>
+                        <b>If you want to reset all the details then click on reset button:</b>
+                        <input type="reset">
+                    
+                        <br><br>
+
+                        <b>If you want to Submit all the details then click on submit button:</b>
+                        <br><br>
+                        <input type="submit" style="background-color: green;color: aliceblue;">
+                    </section>
+                    
+                    <!-- Reset and submit form End -->
+
+        </fieldset>
+    </form>
+    <!-- Form Section End -->
+</body>
+<html>  
+    
